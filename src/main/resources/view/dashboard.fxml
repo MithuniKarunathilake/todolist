@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="689.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="696.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="682.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.729411780834198" green="0.6392157077789307" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1899999976158142" green="0.5139999985694885" blue="1.0" opacity="0.7870722413063049" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <JFXTextField fx:id="txtAddTask" alignment="CENTER" layoutX="157.0" layoutY="128.0" prefHeight="39.0" prefWidth="317.0" promptText="Add task" style="-fx-background-color: white;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton alignment="CENTER" layoutX="492.0" layoutY="122.0" onAction="#btnAddOnAction" prefHeight="51.0" prefWidth="44.0" style="-fx-border-color: #8e44ad; -fx-background-color: baa3ff;" text="+" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblUncompletedTasks" layoutX="22.0" layoutY="190.0" prefHeight="426.0" prefWidth="331.0" stylesheets="@../style/Table.css">
+        <columns>
+          <TableColumn fx:id="colUncompletedTasks" prefWidth="330.0" text="Uncompleted Tasks" />
+        </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="88.0" layoutX="-6.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="688.0" />
+      <Text fill="#493399" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My To-Do-List" textAlignment="CENTER" wrappingWidth="682.0">
+         <font>
+            <Font name="Curlz MT" size="50.0" />
+         </font>
+      </Text>
+      <JFXCheckBox layoutX="281.0" layoutY="233.0" onAction="#btnOnActionDone1" text="Done" />
+      <JFXButton alignment="CENTER" layoutX="561.0" layoutY="631.0" onAction="#btnViewOnAction" prefHeight="39.0" prefWidth="77.0" style="-fx-border-color: #8e44ad; -fx-background-color: baa3ff;" text="View" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXCheckBox layoutX="281.0" layoutY="258.0" onAction="#btnOnActionDone2" text="Done" />
+      <JFXCheckBox layoutX="281.0" layoutY="283.0" onAction="#btnOnActionDone3" text="Done" />
+      <JFXCheckBox layoutX="281.0" layoutY="308.0" onAction="#btnOnActionDone4" text="Done" />
+      <JFXCheckBox layoutX="281.0" layoutY="332.0" onAction="#btnOnActionDone5" text="Done" />
+      <JFXCheckBox layoutX="281.0" layoutY="357.0" onAction="#btnOnActionDone6" text="Done" />
+      <JFXCheckBox layoutX="281.0" layoutY="382.0" onAction="#btnOnActionDone7" text="Done" />
+      <JFXCheckBox layoutX="281.0" layoutY="407.0" onAction="#btnOnActionDone8" text="Done" />
+      <JFXCheckBox layoutX="281.0" layoutY="430.0" onAction="#btnOnActionDone9" text="Done" />
+      <JFXCheckBox layoutX="281.0" layoutY="455.0" onAction="#btnOnActionDone10" text="Done" />
+      <JFXCheckBox layoutX="281.0" layoutY="480.0" onAction="#btnOnActionDone11" text="Done" />
+      <JFXCheckBox layoutX="281.0" layoutY="505.0" onAction="#btnOnActionDone12" text="Done" />
+      <JFXCheckBox layoutX="281.0" layoutY="529.0" onAction="#btnOnActionDone13" text="Done" />
+      <JFXCheckBox layoutX="281.0" layoutY="554.0" onAction="#btnOnActionDone14" text="Done" />
+      <JFXCheckBox layoutX="281.0" layoutY="579.0" onAction="#btnOnActionDone15" text="Done" />
+      <JFXTextField fx:id="txtSelectedTask" alignment="CENTER" layoutX="29.0" layoutY="632.0" prefHeight="39.0" prefWidth="317.0" promptText="Selected Task" style="-fx-background-color: white;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDone1" alignment="CENTER" layoutX="391.0" layoutY="235.0" prefHeight="25.0" prefWidth="250.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDone2" alignment="CENTER" layoutX="392.0" layoutY="262.0" prefHeight="25.0" prefWidth="250.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDone3" alignment="CENTER" layoutX="393.0" layoutY="289.0" prefHeight="25.0" prefWidth="250.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDone4" alignment="CENTER" layoutX="394.0" layoutY="316.0" prefHeight="25.0" prefWidth="250.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDone5" alignment="CENTER" layoutX="394.0" layoutY="342.0" prefHeight="25.0" prefWidth="250.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDone6" alignment="CENTER" layoutX="394.0" layoutY="368.0" prefHeight="25.0" prefWidth="250.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDone7" alignment="CENTER" layoutX="395.0" layoutY="394.0" prefHeight="25.0" prefWidth="250.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDone8" alignment="CENTER" layoutX="395.0" layoutY="420.0" prefHeight="25.0" prefWidth="250.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDone9" alignment="CENTER" layoutX="396.0" layoutY="447.0" prefHeight="25.0" prefWidth="250.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDone10" alignment="CENTER" layoutX="397.0" layoutY="473.0" prefHeight="25.0" prefWidth="250.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <Text fill="WHITE" layoutX="428.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Completed Tasks!">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
